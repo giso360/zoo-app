@@ -1,0 +1,26 @@
+version: '2'
+
+services:
+  app:
+    image: 'zoo-app-with-postgres-db'
+    build:
+      context: .
+    container_name: zoo-app
+    depends_on:
+      - db
+    ports:
+      - 8082:8082
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/zoodb
+      - SPRING_DATASOURCE_USERNAME=zoousr
+      - SPRING_DATASOURCE_PASSWORD=zoopwd
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=none
+  db:
+    image: 'postgres:11'
+    ports:
+      - "5432:5432"
+    container_name: zoo-db
+    environment:
+      - POSTGRES_DB=zoodb
+      - POSTGRES_USER=zoousr
+      - POSTGRES_PASSWORD=zoopwd

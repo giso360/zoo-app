@@ -1,0 +1,24 @@
+server:
+  port: 8082
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/zoodb
+    username: zoousr
+    password: zoopwd
+  jpa:
+    show-sql: false
+    generate-ddl: false
+    hibernate:
+      ddl-auto: none
+  liquibase:
+    change-log: classpath:db/changelog/changelog-master.xml
+    enabled: true
+    clear-checksums: true
+host:
+  name: localhost
+species:
+  url:  myZoo/animals/all-species
+
+
+
+
