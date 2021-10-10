@@ -36,7 +36,7 @@ The database consists of 5 separate tables reflecting the relationships between 
    | 4        | meaow      |
    | 5        | bark       |
 
-- SPECIES_TRICKS TABLE - establishes N-N relationship for species and trick entities with the required foreign key bindings. It reflects the fact that every species can learn skills from a predetermined pool of tricks that is species specific
+- SPECIES_TRICKS TABLE - establishes N-N relationship for species and trick entities with the required foreign key bindings. It reflects the fact that every animal can learn skills from a predetermined pool of tricks that is species specific
 
 
    | species_id | trick_id |
