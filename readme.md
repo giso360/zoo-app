@@ -17,7 +17,7 @@ The service will basically act as an inventory of animals that are available in 
 
   `docker run -p 5432:5432 -d -e POSTGRES_USER=zoousr -e POSTGRES_PASSWORD=zoopwd -e POSTGRES_DB=zoodb postgres:11`
 
-3. Package the app by running: `mvn clean package`
+3. Package the app in Intellij IDE by selecting from the Maven toolbar CLEAN + PACKAGE
 
 4. Copy produced .Jar file from **target** folder to the folder named **docker**
 
