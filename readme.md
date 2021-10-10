@@ -36,7 +36,7 @@ The database consists of 5 separate tables reflecting the relationships between 
    | 4        | meaow      |
    | 5        | bark       |
 
-- ANIMALS TABLE (species table provides foreign key for animal_species column/entity attribute)
+- ANIMALS TABLE (species table provides foreign key for animal_species column/entity attribute). Note that animals are uniquely identified by specifiers that comply with the **UUID** format
 
 
    | animal_id                            | animal_name | animal_species |
