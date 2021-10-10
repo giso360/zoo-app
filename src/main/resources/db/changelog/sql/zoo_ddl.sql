@@ -1,3 +1,7 @@
+----------------------------
+-- CREATE TABLE SPECIES
+----------------------------
+
 create table if not exists species
 (
   species_id serial not null
@@ -10,6 +14,10 @@ alter table species owner to zoousr;
 
 create unique index if not exists species_species_id_uindex
   on species (species_id);
+
+----------------------------
+-- CREATE TABLE ANIMALS
+----------------------------
 
 create table if not exists animals
 (
@@ -27,6 +35,10 @@ alter table animals owner to zoousr;
 create unique index if not exists animals_animal_id_uindex
   on animals (animal_id);
 
+----------------------------
+-- CREATE TABLE TRICKS
+----------------------------
+
 create table if not exists tricks
 (
   trick_id serial not null
@@ -40,6 +52,10 @@ alter table tricks owner to zoousr;
 create unique index if not exists tricks_trick_id_uindex
   on tricks (trick_id);
 
+------------------------------
+-- CREATE TABLE SPECIES_TRICKS
+------------------------------
+
 create table if not exists species_tricks
 (
   species_id integer not null
@@ -51,6 +67,10 @@ create table if not exists species_tricks
 );
 
 alter table species_tricks owner to zoousr;
+
+-----------------------------
+-- CREATE TABLE ANIMAL_TRICKS
+-----------------------------
 
 create table if not exists animal_tricks
 (
