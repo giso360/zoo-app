@@ -36,15 +36,6 @@ The database consists of 5 separate tables reflecting the relationships between 
    | 4        | meaow      |
    | 5        | bark       |
 
-- ANIMALS TABLE (species table provides foreign key for animal_species column/entity attribute). Note that animals are uniquely identified by specifiers that comply with the **UUID** format
-
-
-   | animal_id                            | animal_name | animal_species |
-   | ------------------------------------ | ----------- | -------------- |
-   | 476bed0a-2858-11ec-9621-0242ac130002 | maha        | 1              |
-   | 476be88c-2858-11ec-9621-0242ac130002 | tara        | 1              |
-   | 476beaa8-2858-11ec-9621-0242ac130002 | kenzi       | 2              |
-
 - SPECIES_TRICKS TABLE - establishes N-N relationship for species and trick entities with the required foreign key bindings. It reflects the fact that every species can learn skills from a predetermined pool of tricks that is species specific
 
 
@@ -57,6 +48,15 @@ The database consists of 5 separate tables reflecting the relationships between 
    | 2          | 1        |
    | 2          | 2        |
    | 2          | 4        |
+
+- ANIMALS TABLE (species table provides foreign key for animal_species column/entity attribute). Note that animals are uniquely identified by specifiers that comply with the **UUID** format
+
+
+   | animal_id                            | animal_name | animal_species |
+   | ------------------------------------ | ----------- | -------------- |
+   | 476bed0a-2858-11ec-9621-0242ac130002 | maha        | 1              |
+   | 476be88c-2858-11ec-9621-0242ac130002 | tara        | 1              |
+   | 476beaa8-2858-11ec-9621-0242ac130002 | kenzi       | 2              |
 
 - ANIMAL_TRICKS TABLE - establishes N-N relationship for animal and trick entities with the required foreign key bindings. It identifies the set of tricks that each animal is capable of performing  
 
