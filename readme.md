@@ -104,7 +104,7 @@ The required DDL and DML (DB inserts) sql files are found in src/main/resources/
     - DB URL: jdbc:postgresql://localhost:5432/zoodb
     - DB HOST: localhost
     - DB PORT: 5432
-    - DB DATABASE: zoodb
+    - DB NAME: zoodb
     - DB USER: zoousr
     - DB PASSWORD: zoopwd 
 
@@ -117,4 +117,4 @@ The required DDL and DML (DB inserts) sql files are found in src/main/resources/
 - Get all animals: `localhost:8082/myZoo/animals/all`
 - Get all animals by species (e.g. cat, dog - case insensitive): `localhost:8082/myZoo/animals/all/{**speciesName**}`
 - Make animal perform trick by choosing its UUID: `localhost:8082/myZoo/animals/{**UUID**}/doTrick`
-- Make animal learn trick by choosing its UUID: `localhost:8082/myZoo/animals/{**UUID**}}/learnTrick`
+- Make animal learn trick by choosing its UUID: `localhost:8082/myZoo/animals/{**UUID**}/learnTrick`
